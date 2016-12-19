@@ -14,4 +14,13 @@
  *= require_self
  */
  @import "materialize/components/color";
+ $primary-color: color("blue", "lighten-2") !default;
  @import "materialize";
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
