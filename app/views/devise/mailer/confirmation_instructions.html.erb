@@ -1,5 +1,8 @@
-<p>Welcome <%= @email %>!</p>
+<p>アカウント名: <%= @email %></p>
 
-<p>You can confirm your account email through the link below:</p>
+<p>本登録メールのご案内です。</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+<p><%= link_to '本登録する', confirmation_url(@resource, confirmation_token: @token) %></p>
+
+<p>※このリンクをクリックしていただかないと、クックパッドの本登録が完了しません。必ずこのリンクをクリックしてお進みください。</p>
+<p>※メールに記載されたリンクをクリックしないまま24時間が経過した場合、ご登録依頼が解除となりますのでご注意ください。</p>
