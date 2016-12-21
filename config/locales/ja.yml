@@ -15,6 +15,10 @@ ja:
         password_confirmation: パスワード確認
         current_password: 現在のパスワード
         remember_me: パスワードを記憶する
+      check_item:
+        name: 商品名
+        price_min: 最低価格
+        price_max: 最高価格
   date:
     abbr_day_names:
     - 日
