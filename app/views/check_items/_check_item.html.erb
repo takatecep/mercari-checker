@@ -1,0 +1,15 @@
+<tr>
+  <td><%= check_item.name %></td>
+  <td><%= check_item.price_min %></td>
+  <td><%= check_item.price_max %></td>
+  <td>
+    <%= link_to edit_check_item_path(check_item) do %>
+      <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+    <% end %>
+  </td>
+  <td>
+    <%= link_to check_item_path(check_item), method: :delete, data: { confirm: '削除しても良いですか?' } do %>
+      <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+    <% end %>
+  </td>
+</tr>

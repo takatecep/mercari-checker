@@ -1,0 +1,26 @@
+<h1>商品登録</h1>
+
+<%= form_for(@check_item) do |f| %>
+  <%= hidden_field :check_item, :user_id %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label :price_min %>
+      <%= f.number_field :price_min %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label :price_max %>
+      <%= f.number_field :price_max %>
+    </div>
+  </div>
+  <button class="btn waves-effect waves-light" type="submit" name="action">
+    登録
+  </button>
+<% end %>
