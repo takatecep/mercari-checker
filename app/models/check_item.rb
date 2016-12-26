@@ -9,7 +9,7 @@ class CheckItem < ApplicationRecord
     fetch_items_by(name).each do |item|
       url = fetch_url_from(item)
       price = fetch_price_from(item)
-      result << "#{name} #{price} #{url}" if within_range?(price)
+      result << { name: name, price: price, url: url } if within_range?(price)
     end
     result
   end
