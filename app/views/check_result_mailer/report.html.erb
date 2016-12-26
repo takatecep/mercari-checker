@@ -1,0 +1,11 @@
+<h1>「<%= @item.name %>」チェック結果</h1>
+<% if @result.empty? %>
+  <p><%= @item.price_max %>円以下のアイテムは出品されていませんでした。</p>
+<% else %>
+  <p><%= @item.price_max %>円以下のアイテムが<%= @result.count %>件見つかりました。</p>
+  <ul>
+    <% @result.each do |res| %>
+      <li><%= res[:name] %> <%= res[:price] %>円 <a href="<%= res[:url] %>"><%= res[:url] %></a></li>
+    <% end %>
+  </ul>
+<% end %>
